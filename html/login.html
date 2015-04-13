@@ -1,0 +1,16 @@
+<head>
+	<script type="text/javascript">
+		var onClickSubmit = function(event) {
+			event.preventDefault();
+			document.getElementById("alert").text("you clicked submit button");
+		}
+	</script>
+	<body>
+		<form id="login_form">
+			Email <input type="text" name="email" id="email" /><br />
+			Pass <input type="text" name="pass" id="pass" /><br />
+			<input type="submit" onClick="onClickSubmit()" id="submit" name="submit" label="Submit">
+			<div id="alert">you clicked submit button</div>
+		</form>
+	</body>
+</head>
